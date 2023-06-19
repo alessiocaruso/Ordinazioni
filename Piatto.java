@@ -29,14 +29,15 @@ public class Piatto {
     public void setChef(String chef) {
         this.chef = chef;
     }
+
     private String ingredienti;
     private double prezzo;
     private String chef;
-@Override
+
+    @Override
     public String toString() {
-        
+
         return "Piatto: " + ingredienti + ", Prezzo: " + prezzo + ", Chef: " + chef;
     }
 
-   
 }

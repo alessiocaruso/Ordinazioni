@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        //Autenticazione contiene il menù per le operazioni CRUD dell'user
+        // Autenticazione contiene il menù per le operazioni CRUD dell'user
         Autenticazione auth = new Autenticazione();
         auth.menuAutenticazione();
         int scelta = 0;
@@ -21,18 +21,18 @@ public class Main {
             scelta = scanner.nextInt();
             switch (scelta) {
                 case 1:
-                //Stampiamo il menu e facciamo fare l'ordine all'utente
+                    // Stampiamo il menu e facciamo fare l'ordine all'utente
                     menu.stampaMenu();
                     System.out.println("Cosa vuoi ordinare? Premi un numero per la scelta!");
                     ordine.effettuaOrdine();
                     break;
                 case 2:
-                //Stampiamo ordine che ha effettuato l'utente
+                    // Stampiamo ordine che ha effettuato l'utente
                     ordine.stampaOrdine();
                     break;
 
                 case 3:
-                //Stampiamo il menu per l'autenticazione
+                    // Stampiamo il menu per l'autenticazione
                     auth.menuAutenticazione();
                     break;
                 case 4:

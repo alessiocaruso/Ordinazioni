@@ -30,14 +30,15 @@ public class Ordinazione extends Menu {
         boolean volontaOrdine = false;
         Menu menu = new Menu();
         menu.inizializza();
+
         do {
             Scanner scanner = new Scanner(System.in);
-            //Scelta del piatto
+            // Scelta del piatto
             int scelta = scanner.nextInt();
             ArrayList<Piatto> piatti = menu.getPiatti();
             Piatto piattoScelto = piatti.get(scelta);
 
-            //Aggiunta del piatto scelto all'ordine totale
+            // Aggiunta del piatto scelto all'ordine totale
             ordineTotale.add(piattoScelto);
 
             prezzoTotale += piattoScelto.getPrezzo(); // Aggiunta del prezzo del piatto al prezzo totale

@@ -20,12 +20,12 @@ public class Menu {
     }
 
     public ArrayList<Piatto> getPiatti() {
-        //get per ottenere i vari piatti inizializzati
+        // get per ottenere i vari piatti inizializzati
         return piatti;
     }
 
     public void stampaMenu() {
-        //Stampa menu
+        // Stampa menu
         int count = 0;
         for (Piatto piatto : piatti) {
             System.out.println(count + ". " + piatto);
