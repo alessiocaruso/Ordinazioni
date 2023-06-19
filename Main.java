@@ -43,7 +43,7 @@ public class Main {
                     System.out.println("Non hai inserito una scelta giusta");
                     break;
             }
-        } while (scelta != 7);
+        } while (scelta != 4);
     }
 
 }
